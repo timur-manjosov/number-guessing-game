@@ -15,22 +15,22 @@ This project requires Python 3.
 
 First, create and activate a virtual environment:
 
-​```bash
+```bash
 python -m venv .venv
 source .venv/bin/activate
-​```
+```
 
 After activating, your prompt should look like this:
 
-​```bash
+```bash
 (.venv) user@arch ~/number-guessing-game $
-​```
+```
 
 Then run the game:
 
-​```bash
+```bash
 python main.py
-​```
+```
 
 ## What I learned
 
