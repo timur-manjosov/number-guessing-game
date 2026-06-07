@@ -1,0 +1,8 @@
+# Virtuelle Umgebungen — gehören nie ins Repository,
+# jeder erstellt sich seine eigene lokal.
+.venv/
+venv/
+
+# Von Python automatisch erzeugte, kompilierte Zwischendateien.
+__pycache__/
+*.pyc
