@@ -1,28 +1,28 @@
 import random
 
 def play_game():
-    random_zahl = random.randint(1, 10)
-    print("Ich habe eine Zahl zwischen 1 bis 10 ausgesucht. Raten sie, welche es ist!\n")
+    random_number = random.randint(1, 10)
+    print("I chose a number between one and ten. Guess it!\n")
 
     while True:
         x = input()
         try:
             x = int(x)
 
-            if (x == random_zahl):
-                print("Herzlichen Glückwunsch!")
+            if (x == random_number):
+                print("Congratulations!")
                 break
             else:
-                if (x < random_zahl):
-                    print("Die Schätzung ist kleiner als die zu erratende Zahl!\n")
-                elif (x > random_zahl):
-                    print("Die Schätzung ist größer als die zu erratende Zahl!\n") 
+                if (x < random_number):
+                    print("Too low!\n")
+                elif (x > random_number):
+                    print("Too high!\n") 
 
         except ValueError:
-            print("Bitte geben sie eine Zahl ein!\n")
+            print("Only numbers are allowed!\n")
 
 def start_service():
-    answer = input("You want to quit? Type n to quit the game. Otherweise continue with any letter!\n")
+    answer = "Y"
 
     while (answer != "n"):
         play_game()
