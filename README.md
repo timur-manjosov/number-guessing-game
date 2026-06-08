@@ -6,8 +6,9 @@ number between 1 and 10, with hints after each guess.
 ## Features
 
 - Generates a random number from 1 to 10
-- Tells the player whether their guess is too small or too large
+- Tells the player whether their guess is too low or too high
 - Handles invalid input gracefully by catching a `ValueError`
+- Lets the player play multiple rounds in a row
 
 ## How to run
 
@@ -20,12 +21,6 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-After activating, your prompt should look like this:
-
-```bash
-(.venv) user@arch ~/number-guessing-game $
-```
-
 Then run the game:
 
 ```bash
@@ -36,4 +31,5 @@ python main.py
 
 - How to guard against non-integer input using try / except
 - That a `while True` loop can be exited with `break`
+- How to organize code into functions and reuse them
 - That reading the input once at the start of the loop is enough
